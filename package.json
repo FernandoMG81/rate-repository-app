@@ -12,11 +12,37 @@
     "expo": "~48.0.6",
     "expo-splash-screen": "~0.18.1",
     "expo-status-bar": "~1.4.4",
+    "formik": "^2.2.9",
     "react": "18.2.0",
-    "react-native": "0.71.3"
+    "react-dom": "18.2.0",
+    "react-native": "0.71.4",
+    "react-native-web": "~0.18.10",
+    "react-router-native": "^6.9.0",
+    "yup": "^1.0.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.20.0",
+    "@expo/webpack-config": "^18.0.1",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8.36.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-config-standard-jsx": "^11.0.0",
+    "eslint-config-standard-react": "^13.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.32.2"
   },
-  "private": true
+  "private": true,
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "extends": [
+      "standard",
+      "standard-jsx",
+      "standard-react"
+    ],
+    "rules": {
+      "react/prop-types": "off"
+    }
+  }
 }
